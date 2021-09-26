@@ -6,8 +6,6 @@ class FlutterChannelIo {
 
   static Future<String> boot() async {
     BootConfig config = BootConfig();
-    ChannelIOApi api = ChannelIOApi();
-    print(await api.boot(config));
-    return "test2";
+    return await _api.boot(config);
   }
 }
